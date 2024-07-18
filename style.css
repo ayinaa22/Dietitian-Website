@@ -1,0 +1,250 @@
+:root {
+  --white: #ffffff;
+  --black: #000;
+  --green-70: #72ae44;
+  --text: #333333;
+  --green-95: #f6fbe9;
+  --green-85: #e5f5bd;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #fafdf2;
+}
+
+.nav-bar {
+  background-color: var(--green-70);
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+  gap: 20px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  font-family: "Urbanist", sans-serif;
+  margin-left: 20px;
+}
+.left a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.right {
+  font-family: "Urbanist", sans-serif;
+  align-items: center;
+  margin-right: 10px;
+  display: flex;
+  gap: 20px;
+}
+.right a {
+  color: var(--white);
+  text-decoration: none;
+}
+.ri-search-line {
+  color: var(--white);
+  font-size: 20px;
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-image {
+  width: 50%;
+  border-radius: 10px;
+  height: 500px;
+}
+
+.hero-image img {
+  height: 500px;
+  width: 100%;
+  border-bottom-right-radius: 10px;
+  object-fit: cover;
+}
+
+.hero-description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 25px;
+  width: 50%;
+}
+
+.hero-title {
+  color: var(--green-70);
+  font-family: "Lora", serif;
+  font-size: 38px;
+}
+
+.hero-p {
+  color: var(--text);
+  font-family: "Lora", serif;
+  font-size: 18px;
+  text-align: justify;
+  padding: 30px 0;
+}
+.button {
+  display: flex;
+  gap: 10px;
+}
+
+.learn-more {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--green-70);
+  color: var(--white);
+  border-radius: 10px;
+  border: none;
+  width: 120px;
+  height: 52px;
+  font-size: 16px;
+  font-family: "Lora", serif;
+  text-align: center;
+}
+
+.book {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--green-70);
+  color: var(--white);
+  border-radius: 10px;
+  border: none;
+  width: 250px;
+  height: 52px;
+  font-size: 16px;
+  font-family: "Lora", serif;
+  background-color: var(--green-95);
+  border: 2px solid #e5f5bd;
+  color: var(--black);
+  font-weight: 600;
+}
+
+
+.about{
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0;
+  height: 500px;
+}
+
+.about-us{
+  font-family: 'Urbanist',sans-serif;
+  color:var(--green-70);
+  text-transform: uppercase;
+  font-size: 28px;
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.why-us{
+  font-family: 'Lora',serif;
+  font-size: 38px;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.about-card{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
+
+}
+
+.card{
+  background-color: var(--green-95);
+  width: 348px;
+  height: 270px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  
+
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+
+
+.card-section{
+  display: flex;
+
+}
+
+.card-icon-box{
+  background-color: var(--green-70);
+  width: 52px;
+  height: 54px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 20px 20px;
+
+}
+.card-icon-box img{
+  width:30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  color: var(--white);
+}
+
+.card-title{
+  font-family: 'Lora',serif;
+  font-weight: 600;
+  margin: 30px 0;
+  font-size: 28px;
+
+}
+
+.card-description{
+  font-family:'Roboto',sans-serif;
+  font-size: 14px;
+  padding: 15px 40px;
+  text-align: justify;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.services{
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0;
+  height: 800px;
+
+}
+
+.services-heading{
+  font-family: 'Urbanist',sans-serif;
+  color:var(--green-70);
+  text-transform: uppercase;
+  font-size: 28px;
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.what-we-offer{
+  font-family: 'Lora',serif;
+  font-size: 38px;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  padding: 10px 0;
+}
