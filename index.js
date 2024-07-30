@@ -143,5 +143,30 @@ mobileGalleryBtn.addEventListener('click', (event) => {
   mobileGalleryDropdown.style.display = mobileGalleryDropdown.style.display === 'block' ? 'none' : 'block';
 });
 
+
+//search-bar
+const searchIcon = document.getElementById('searchIcon');
+const mobileSearchIcon = document.getElementById('mobileSearchIcon');
+const searchOverlay = document.getElementById('searchOverlay');
+const closeSearchOverlay = document.getElementById('closeSearchOverlay');
+
+searchIcon.addEventListener('click', () => {
+  searchOverlay.style.display = 'flex';
+});
+
+mobileSearchIcon.addEventListener('click', () => {
+  searchOverlay.style.display = 'flex';
+});
+
+closeSearchOverlay.addEventListener('click', () => {
+  searchOverlay.style.display = 'none';
+});
+
+function searchFunction() {
+  const query = document.getElementById('searchInput').value;
+  if (query) {
+    window.location.href = `./search.html?query=${query}`;
+  }
+}
   
   

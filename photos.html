@@ -42,10 +42,10 @@
       <a href="./events.html">Events</a>
       <a href="./blog.html">Blog</a>
       <a href="./contact-us.html">Contact Us</a>
-      <i class="ri-search-line"></i>
+      <i class="ri-search-line" id="searchIcon"></i>
     </div>
     <div class="hamburger-menu">
-      <i class="ri-search-line search-icon"></i>
+      <i class="ri-search-line search-icon" id="mobileSearchIcon"></i>
       <i class="ri-menu-line menu-icon"></i>
       <i class="ri-close-line close-icon"></i>
     </div>
@@ -64,6 +64,14 @@
     <a href="./events.html">Events</a>
     <a href="./blog.html">Blog</a>
     <a href="./contact-us.html">Contact Us</a>
+  </div>
+
+  <div class="search-overlay" id="searchOverlay">
+    <button class="close-btn" id="closeSearchOverlay">X</button>
+    <div class="search-box">
+      <input type="text" placeholder="Search Here..." id="searchInput">
+      <button onclick="searchFunction()"> <i class="ri-search-line" id="searchIcon"></i></button>
+    </div>
   </div>
       <div class="container">
         <div class="background">

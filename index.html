@@ -44,10 +44,10 @@
         <a href="./events.html">Events</a>
         <a href="./blog.html">Blog</a>
         <a href="./contact-us.html">Contact Us</a>
-        <i class="ri-search-line"></i>
+        <i class="ri-search-line" id="searchIcon"></i>
       </div>
       <div class="hamburger-menu">
-        <i class="ri-search-line search-icon"></i>
+        <i class="ri-search-line search-icon" id="mobileSearchIcon"></i>
         <i class="ri-menu-line menu-icon"></i>
         <i class="ri-close-line close-icon"></i>
       </div>
@@ -67,7 +67,14 @@
       <a href="./blog.html">Blog</a>
       <a href="./contact-us.html">Contact Us</a>
     </div>
-    
+  
+    <div class="search-overlay" id="searchOverlay">
+      <button class="close-btn" id="closeSearchOverlay">X</button>
+      <div class="search-box">
+        <input type="text" placeholder="Search Here..." id="searchInput">
+        <button onclick="searchFunction()"> <i class="ri-search-line" id="searchIcon"></i></button>
+      </div>
+    </div>
     
   
 
@@ -503,6 +510,16 @@
             </div>
         </div>
     </section>
+
+    <div class="get-started-today">
+      <div class="get-started-today-right">
+          <h1><span style="color: black;">Get Started </span> <span style="color: #72ae44;">Today</span></h1>
+          <p>Ready to embark on your journey to a healthier you? Contact us to schedule a consultation or learn more about our services. Together, we can create a personalized plan that fits your life and helps you reach your health goals.</p>
+      </div>
+      <div class="get-started-btn">Contact Us
+      </div>
+  
+  </div>
 
     <footer>
       <div class="top-footer">
