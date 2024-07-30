@@ -1521,6 +1521,7 @@ footer {
   background-color: var(--green-70);
   color: var(--white);
   padding: 40px 20px;
+  margin-top: 30px;
   text-align: left;
   font-family: 'Urbanist', sans-serif;
 }
@@ -1557,6 +1558,10 @@ footer {
   gap: 10px;
 }
 
+.icon a {
+  text-decoration: none;
+  color: var(--white);
+}
 .icon i {
   font-size: 24px;
 }
@@ -1914,12 +1919,12 @@ color: var(--green-70);
   }
 }
 
-event-details{
+event-details,blog-details{
   padding: 20px;
 }
 
 
-.event-details-title{
+.event-details-title,.blog-details-title{
   font-family: 'Lora',serif;
   font-size: 24px;
   text-align: center;
@@ -2179,6 +2184,10 @@ event-details{
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.get-started-today a{
+  text-decoration: none;
+}
+
 
 .get-started-today-right {
   width: 100%;
@@ -2240,9 +2249,12 @@ event-details{
     margin: 0 100px;
   }
 
+ 
   .get-started-today-right {
     padding: 40px;
   }
+
+  
 
   .get-started-btn {
     width: 160px;
@@ -2405,5 +2417,67 @@ textarea {
   .info-box {
     max-width: 100%;
     margin-bottom: 10px; /* Add margin between info boxes */
+  }
+}
+.blog-details-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-details-container img {
+  width: 100%; /* Make image responsive */
+  max-width: 800px; /* Limit the maximum width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.blog-details {
+  color: var(--text);
+  font-size: 20px;
+  text-align: justify;
+  padding: 10px 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .blog-details-container img {
+    max-width: 700px; /* Adjust for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .blog-details-container img {
+    max-width: 600px; /* Adjust for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .blog-details {
+    font-size: 18px; /* Slightly smaller text for medium screens */
+    padding: 10px 15px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-details-container img {
+    max-width: 500px; /* Adjust for mobile screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .blog-details {
+    font-size: 16px; /* Smaller text for mobile screens */
+    padding: 10px 10px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-details-container img {
+    max-width: 100%; /* Full width on very small screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .blog-details {
+    font-size: 14px; /* Smaller text for very small screens */
+    padding: 5px 5px; /* Adjust padding */
   }
 }
