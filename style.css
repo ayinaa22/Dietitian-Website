@@ -1993,8 +1993,9 @@ event-details,blog-details{
   gap: 20px;
 }
 .photo-images img {
-  max-width: 200px;
+  width: 280px;
   height: auto;
+  object-fit: cover;
 }
 
 /* About-us section Styling */
