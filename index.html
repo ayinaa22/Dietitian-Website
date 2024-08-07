@@ -26,490 +26,534 @@
     
   </head>
   <body>
-    <div class="nav-bar">
-      <div class="left">
-        <a href="./index.html">Sattva Diet and Wellness Center</a>
-      </div>
-      <div class="right">
-        <a href="./index.html">Home</a>
-        <a href="./about-us.html">About Us</a>
-        <a href="./services.html">Services</a>
-        <div class="dropdown">
-          <a href="#" class="dropbtn" id="galleryBtn">Gallery <i class="ri-arrow-down-s-fill"></i></a>
-          <div class="dropdown-content" id="galleryDropdown">
-            <a href="./photos.html">Photos</a>
-            <a href="./videos.html">Videos</a>
-          </div>
-        </div>
-        <a href="./events.html">Events</a>
-        <a href="./blog.html">Blog</a>
-        <a href="./contact-us.html">Contact Us</a>
-        <i class="ri-search-line" id="searchIcon"></i>
-      </div>
-      <div class="hamburger-menu">
-        <i class="ri-search-line search-icon" id="mobileSearchIcon"></i>
-        <i class="ri-menu-line menu-icon"></i>
-        <i class="ri-close-line close-icon"></i>
+   <!-- Navigation Bar -->
+<div class="nav-bar">
+  <div class="left">
+    <!-- Logo/Title -->
+    <a href="./index.html">Sattva Diet and Wellness Center</a>
+  </div>
+  <div class="right">
+    <!-- Navigation Links -->
+    <a href="./index.html">Home</a>
+    <a href="./about-us.html">About Us</a>
+    <a href="./services.html">Services</a>
+    <!-- Dropdown Menu -->
+    <div class="dropdown">
+      <a href="#" class="dropbtn" id="galleryBtn">Gallery <i class="ri-arrow-down-s-fill"></i></a>
+      <div class="dropdown-content" id="galleryDropdown">
+        <a href="./photos.html">Photos</a>
+        <a href="./videos.html">Videos</a>
       </div>
     </div>
-    <div class="mobile-nav">
-      <a href="./index.html">Home</a>
-      <a href="./about-us.html">About Us</a>
-      <a href="./services.html">Services</a>
-      <div class="dropdown">
-        <a href="#" class="dropbtn" id="mobileGalleryBtn">Gallery <i class="ri-arrow-down-s-fill"></i></a>
-        <div class="dropdown-content" id="mobileGalleryDropdown">
-          <a href="./photos.html">Photos</a>
-          <a href="./videos.html">Videos</a>
-        </div>
-      </div>
-      <a href="./events.html">Events</a>
-      <a href="./blog.html">Blog</a>
-      <a href="./contact-us.html">Contact Us</a>
+    <a href="./events.html">Events</a>
+    <a href="./blog.html">Blog</a>
+    <a href="./contact-us.html">Contact Us</a>
+    <!-- <i class="ri-search-line" id="searchIcon"></i> -->
+  </div>
+  <!-- Hamburger Menu for Mobile -->
+  <div class="hamburger-menu">
+    <!-- <i class="ri-search-line search-icon" id="mobileSearchIcon"></i> -->
+    <i class="ri-menu-line menu-icon"></i>
+    <i class="ri-close-line close-icon"></i>
+  </div>
+</div>
+
+<!-- Mobile Navigation -->
+<div class="mobile-nav">
+  <a href="./index.html">Home</a>
+  <a href="./about-us.html">About Us</a>
+  <a href="./services.html">Services</a>
+  <!-- Mobile Dropdown Menu -->
+  <div class="dropdown">
+    <a href="#" class="dropbtn" id="mobileGalleryBtn">Gallery <i class="ri-arrow-down-s-fill"></i></a>
+    <div class="dropdown-content" id="mobileGalleryDropdown">
+      <a href="./photos.html">Photos</a>
+      <a href="./videos.html">Videos</a>
     </div>
+  </div>
+  <a href="./events.html">Events</a>
+  <a href="./blog.html">Blog</a>
+  <a href="./contact-us.html">Contact Us</a>
+</div>
+
   
-    <div class="search-overlay" id="searchOverlay">
-      <button class="close-btn" id="closeSearchOverlay">X</button>
-      <div class="search-box">
-        <input type="text" placeholder="Search Here..." id="searchInput">
-        <button onclick="searchFunction()"> <i class="ri-search-line" id="searchIcon"></i></button>
-      </div>
-    </div>
-    
+  
   
 
-    <div class="hero-container">
-      <div class="hero-image">
-        <img src="./assets/gallery/hero-image/profile.jpg" alt="hero_img" />
+  <!-- Hero Section -->
+<div class="hero-container">
+  <!-- Hero Image -->
+  <div class="hero-image">
+    <img src="./assets/gallery/hero-image/profile.jpg" alt="hero_img" />
+  </div>
+  <!-- Hero Description -->
+  <div class="hero-description">
+    <div class="hero-title">Satva Diet and Wellness Center</div>
+    <div class="hero-p">
+      At Sattva, we believe in transforming lives through personalized
+      nutrition and holistic wellness practices. Our clinic is dedicated to
+      helping you achieve your health goals with tailored diet plans, expert
+      guidance, and comprehensive wellness solutions.
+    </div>
+    <!-- Hero Buttons -->
+    <div class="button">
+      <a href="./about-us.html"><div class="learn-more">Learn More</div></a>
+      <a href="./book-online-appointment.html"><div class="book">Book an Online Appointment</div></a>
+    </div>
+  </div>
+</div>
+
+
+  <!-- About Us Section -->
+<section class="about">
+  <!-- About Us Title -->
+  <div class="about-us">About Us</div>
+  <!-- Why Choose Us Title -->
+  <div class="why-us">
+      <span style="color: #000; margin-right: 5px;">Why</span>
+      <span style="color: #72ae44;">Choose Us?</span>
+  </div>
+  <!-- About Cards Container -->
+  <div class="about-card">
+      <!-- Expertise Card -->
+      <div class="card">
+          <div class="card-section">
+              <div class="card-icon-box">
+                  <img src="./assets/icons/expertise.png" alt="expertise_icon">
+              </div>
+              <div class="card-title">Expertise</div>
+          </div>
+          <div class="card-description">
+              <div>Our Dietitian and wellness professional professional with years of experience in nutrition science and holistic health practices.</div>
+          </div>
       </div>
-      <div class="hero-description">
-        <div class="hero-title">Satva Diet and Wellness Center</div>
-        <div class="hero-p">
-          At Sattva, we believe in transforming lives through personalized
-          nutrition and holistic wellness practices. Our clinic is dedicated to
-          helping you achieve your health goals with tailored diet plans, expert
-          guidance, and comprehensive wellness solutions.
-        </div>
-        <div class="button">
-          <a href="./about-us.html"><div class="learn-more">Learn More</div></a>
-          <a href="./book-online-appointment.html"><div class="book">Book an Online Appointment</div></a>
-        </div>
+      <!-- Personalized Care Card -->
+      <div class="card">
+          <div class="card-section">
+              <div class="card-icon-box">
+                  <img src="./assets/icons/personalizedcare.png" alt="personalized_care_icon">
+              </div>
+              <div class="card-title">Personalized Care</div>
+          </div>
+          <div class="card-description">
+              <div>We prioritize individualized care and attention, ensuring that your journey towards better health is both effective and enjoyable.</div>
+          </div>
+      </div>
+      <!-- Results-Oriented Approach Card -->
+      <div class="card">
+          <div class="card-section">
+              <div class="card-icon-box">
+                  <img src="./assets/icons/results.png" alt="results_icon">
+              </div>
+              <div class="card-title">Results-Oriented <br> Approach</div>
+          </div>
+          <div class="card-description">
+              <div>With a focus on evidence-based strategies and measurable outcomes, we aim to empower you to achieve sustainable changes in your health and well-being.</div>
+          </div>
+      </div>
+  </div>
+</section>
+
+   <!-- Services Section -->
+<section class="services">
+  <!-- Heading for the Services Section -->
+  <div class="services-heading">Services</div>
+  
+  <!-- Subtitle for the Services Section -->
+  <div class="what-we-offer">
+    <span style="color: #000; margin-right: 5px;">What</span>
+    <span style="color: #72ae44;">We Offer</span>
+  </div>
+
+  <!-- Container for the first set of services -->
+  <div class="services-card-1">
+    <!-- Nutritional Counseling Service -->
+    <div class="services-1">
+      <div class="img-1">
+        <img src="./assets/services/individual consulting.jpg" alt="individual_counseling">
+      </div>
+      <div class="services-title">Nutritional Counseling</div>
+      <div class="services-description">
+        One-on-one consultations with our dietitian to educate, motivate, and guide you towards healthier eating habits.
+      </div>
+      <div class="services-list">
+        <img src="./assets/icons/check.png" alt="check_icon">
+        <div class="list-p">For teacher and parents at Montessori, Schools, and Colleges</div>
+      </div>
+      <div class="services-list">
+        <img src="./assets/icons/check.png" alt="check_icon">
+        <div class="list-p">For Corporate office staff</div>
+      </div>
+      <div class="btn">
+        <a href="./contact-us.html">
+          <div class="btn-join">Join Now <i class="ri-arrow-right-line"></i></div>
+        </a>
       </div>
     </div>
 
-    <section class="about">
-        <div class="about-us">About Us</div>
-        <div class="why-us">
-            <span style="color: #000; margin-right: 5px;">Why</span>
-            <span style="color: #72ae44;">Choose Us?</span>
-        </div>
-        
-        <div class="about-card">
-            <div class="card">
-                <div class="card-section">
-                    <div class="card-icon-box">
-                        <img src="./assets/icons/expertise.png" alt="expertise_icon">
-                    </div>
-                    <div class="card-title">Expertise</div>
-                </div>
-                <div class="card-description">
-                    <div>Our Dietitian and wellness professional professional with years of experience in nutrition science and holistic health practices.</div>
+    <!-- Wellness Programs Service -->
+    <div class="services-1">
+      <div class="img-1">
+        <img src="https://content.thriveglobal.com/wp-content/uploads/2019/03/Stress-Relief.png" alt="wellness_program_img">
+      </div>
+      <div class="services-title">Wellness Programs</div>
+      <div class="services-description">
+        Integrative wellness programs that combine nutrition, exercise, stress management, and lifestyle adjustments for holistic health improvement.
+      </div>
+      <div class="services-list">
+        <img src="./assets/icons/check.png" alt="check_icon">
+        <div class="list-p">2-hour Workshop at corporate offices</div>
+      </div>
+      <div class="services-list">
+        <img src="./assets/icons/check.png" alt="check_icon">
+        <div class="list-p">Happiness program</div>
+      </div>
+      <div class="btn">
+        <a href="./contact-us.html">
+          <div class="btn-join">Join Now <i class="ri-arrow-right-line"></i></div>
+        </a>
+      </div>
+    </div>
 
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-section">
-                    <div class="card-icon-box">
-                        <img src="./assets/icons/personalizedcare.png" alt="expertise_icon">
-                    </div>
-                    <div class="card-title">Personalized Care</div>
-                </div>
-                <div class="card-description">
-                    <div>We prioritize individualized care and attention, ensuring that your journey towards better health is both effective and enjoyable.</div>
+    <!-- Special Service: Marma Therapy -->
+    <div class="services-1">
+      <div class="img-1">
+        <img src="./assets/services/marma-therapy.png" alt="marma_therapy_img">
+      </div>
+      <div class="special-service-title">Special Service</div>
+      <div class="services-title">Marma Therapy</div>
+      <div class="services-description">
+        It is an ancient Ayurvedic therapy to heal your body and mind. It removes blockages from the marma points giving physical and psychological relaxation and strength. It is a powerful process and a therapy that works with these subtle and sensitive energy points to open the energy channels in the body.
+      </div>
+      <div class="btn">
+        <a href="./contact-us.html">
+          <div class="btn-join">Join Now <i class="ri-arrow-right-line"></i></div>
+        </a>
+      </div>
+    </div>
+  </div>
 
-                </div>
-
-
-            </div>
-            <div class="card">
-                <div class="card-section">
-                    <div class="card-icon-box">
-                        <img src="./assets/icons/results.png" alt="expertise_icon">
-                    </div>
-                    <div class="card-title">Results-Oriented <br> Approach</div>
-                </div>
-                <div class="card-description">
-                    <div>With a focus on evidence-based strategies and measurable outcomes, we aim to empower you to achieve sustainable changes in your health and well-being.</div>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="services">
-        <div class="services-heading">Services</div>
-        <div class="what-we-offer">
-            <span style="color: #000; margin-right: 5px;">What</span>
-            <span style="color: #72ae44;">We Offer</span>
-        </div>
-        <div class="services-card-1">
-            <div class="services-1">
-                <div class="img-1"><img src="./assets/services/individual consulting.jpg" alt="individual_counsellint"></div>
-                <div class="services-title">Nutritional Counseling</div>
-                <div class="services-description">One-on-one consultations with our dietitian to educate, motivate, and guide you towards healthier eating habits.</div>
-
-                <div class="services-list">
-                    <img src="./assets/icons/check.png" alt="check_icon">
-                    <div class="list-p">For teacher and parents at Montessori, Schools and Colleges</div>
-                </div>
-                <div class="services-list">
-                    <img src="./assets/icons/check.png" alt="check_icon">
-                    <div class="list-p"> For Corporate office staffs</div>
-                </div>
-                <div class="btn">
-                  <a href="./contact-us.html"><div class="btn-join">Join Now
-                    <i class="ri-arrow-right-line"></i></a>
-                </div>
-                
-              </div>
-
-            </div>
-            <div class="services-1">
-              <div class="img-1"><img src="https://content.thriveglobal.com/wp-content/uploads/2019/03/Stress-Relief.png" alt="wellness_program_img"></div>
-              <div class="services-title">Wellness Programs</div>
-              <div class="services-description">Integrative wellness programs that combine nutrition, exercise, stress management, and lifestyle adjustments for holistic health improvement.</div>
-
-              <div class="services-list">
-                  <img src="./assets/icons/check.png" alt="check_icon">
-                  <div class="list-p">2 hours Workshop at corporate offices</div>
-              </div>
-              <div class="services-list">
-                  <img src="./assets/icons/check.png" alt="check_icon">
-                  <div class="list-p"> Happiness program</div>
-              </div>
-              <div class="btn">
-                <a href="./contact-us.html"><div class="btn-join">Join Now
-                  <i class="ri-arrow-right-line"></i></a>
-              </div>
-              
-            </div>
-
+  <!-- Container for the second set of services -->
+  <div class="services-card-2">
+    <!-- Personalized Diet Plans Service -->
+    <div class="services-2">
+      <div class="img-2">
+        <img src="./assets/services/meal plan.webp" alt="meal_plan">
+      </div>
+      <div class="services-title-2">Personalized Diet Plans</div>
+      <div class="services-description-2">
+        Customized nutrition plans designed to meet your specific goals, whether it's weight management, sports nutrition, or dietary modifications for health conditions.
+      </div>
+      <div class="services-list-main">
+        <div class="services-list-left">
+          <div class="services-list-one">
+            <img src="./assets/icons/check.png" alt="check_icon">
+            <div class="list-p-3">Weight loss/gain</div>
           </div>
-          <div class="services-1">
-            <div class="img-1"><img src="./assets/services/marma-therapy.png" alt="marma_therapy_img"></div>
-            <div class="special-service-title">Special Service</div>
-            <div class="services-title">Marma Therapy</div>
-            <div class="services-description">It is an ancient Ayurvedic therapy to heal your body and mind. It removes blockages from the marma points giving physical and psychological relaxation and strength. It is a powerful process and a therapy that works with these subtle and sensitive energy points to open the energy channels in the body.</div>
-            <div class="btn">
-              <a href="./contact-us.html"><div class="btn-join">Join Now
-                <i class="ri-arrow-right-line"></i></a>
-            </div>
-            
+          <div class="services-list-one">
+            <img src="./assets/icons/check.png" alt="check_icon">
+            <div class="list-p-3">Diabetes</div>
           </div>
-
-        </div>
-            
-            
-
-
-        </div>
-
-        <div class="services-card-2">
-          <div class="services-2">
-            <div class="img-2"><img src="./assets/services/meal plan.webp" alt="meal_plan"></div>
-            <div class="services-title-2">Personalized Diet Plans</div>
-            <div class="services-description-2">Customized nutrition plans designed to meet your specific goals, whether it's weight management, sports nutrition, or dietary modifications for health conditions.</div>
-
-            <div class="services-list-main">
-              <div class="services-list-left">
-                <div class="services-list-one">
-                <img src="./assets/icons/check.png" alt="check_icon">
-                <div class="list-p-3">Weight loss/gain</div>
-              </div>
-              <div class="services-list-one">
-                <img src="./assets/icons/check.png" alt="check_icon">
-                <div class="list-p-3"> Diabetes</div>
-              </div>
-              <div class="services-list-one">
-                <img src="./assets/icons/check.png" alt="check_icon">
-                <div class="list-p-2"> Thyroid disorders</div>
-                </div>
-                <div class="services-list-one">
-                <img src="./assets/icons/check.png" alt="check_icon">
-                <div class="list-p-2">Other hormonal disorders </div>
-                </div>
-                <div class="services-list-one">
-                <img src="./assets/icons/check.png" alt="check_icon">
-                <div class="list-p-2"> Heart disease</div>
-                </div>
-                <div class="services-list-one">
-                  <img src="./assets/icons/check.png" alt="check_icon">
-                  <div class="list-p-2">  Pregnancy and post pregnancy</div>
-                  </div>
-              </div>
-              <div class="services-list-right">
-                <div class="services-list-one">
-                <img src="./assets/icons/check.png" alt="check_icon">
-                
-              <div class="list-p-3">Anemia</div>
-              </div>
-              <div class="services-list-one">
-              <img src="./assets/icons/check.png" alt="check_icon">
-              <div class="list-p-3">Kidney disease</div>
-              </div>
-              <div class="services-list-one">
-              <img src="./assets/icons/check.png" alt="check_icon">
-              <div class="list-p-3">Post surgery</div>
-              </div>
-              <div class="services-list-one">
-              <img src="./assets/icons/check.png" alt="check_icon">
-              <div class="list-p-3">Pediatric(child-
-                nutrition)</div>
-                </div>
-                <div class="services-list-one">
-              <img src="./assets/icons/check.png" alt="check_icon">
-              <div class="list-p-3">Vitamin <br>
-                deficiencies
-                </div>
-                </div>
-
-              </div>
-            </div>
-    
-            <div class="btn">
-              <a href="./contact-us.html"><div class="btn-join">Join Now
-                <i class="ri-arrow-right-line"></i></a>
-              </div>
-        </div>
-        </div>
-        </div>
-        </section>
-        <section class="counter">
-            <div class="counter-element-1">
-              <div class="counter-icon">
-                <img src="./assets/icons/member.png" alt="members_icon">
-              </div>
-              <div class="counter-content">
-                <div class="counter-num">1500</div>
-
-                <div class="counter-text">+Total members</div>
-              </div>
-            </div>
-            <div class="counter-element-1">
-              <div class="counter-icon">
-                <img src="./assets/icons/member.png" alt="members_icon">
-              </div>
-              <div class="counter-content">
-                <div class="counter-num">1500</div>
-
-                <div class="counter-text">+Total members</div>
-              </div>
-            </div>
-            <div class="counter-element-1">
-              <div class="counter-icon">
-                <img src="./assets/icons/member.png" alt="members_icon">
-              </div>
-              <div class="counter-content">
-                <div class="counter-num">1500</div>
-
-                <div class="counter-text">+Total members</div>
-              </div>
-            </div>
-            <div class="counter-element-1">
-              <div class="counter-icon">
-                <img src="./assets/icons/member.png" alt="members_icon">
-              </div>
-              <div class="counter-content">
-                <div class="counter-num">1500</div>
-
-                <div class="counter-text">+Total members</div>
-              </div>
-            </div>
+          <div class="services-list-one">
+            <img src="./assets/icons/check.png" alt="check_icon">
+            <div class="list-p-2">Thyroid disorders</div>
           </div>
+          <div class="services-list-one">
+            <img src="./assets/icons/check.png" alt="check_icon">
+            <div class="list-p-2">Other hormonal disorders</div>
+          </div>
+          <div class="services-list-one">
+            <img src="./assets/icons/check.png" alt="check_icon">
+            <div class="list-p-2">Heart disease</div>
+          </div>
+          <div class="services-list-one">
+            <img src="./assets/icons/check.png" alt="check_icon">
+            <div class="list-p-2">Pregnancy and post-pregnancy</div>
+          </div>
+        </div>
+        <div class="services-list-right">
+          <div class="services-list-one">
+            <img src="./assets/icons/check.png" alt="check_icon">
+            <div class="list-p-3">Anemia</div>
+          </div>
+          <div class="services-list-one">
+            <img src="./assets/icons/check.png" alt="check_icon">
+            <div class="list-p-3">Kidney disease</div>
+          </div>
+          <div class="services-list-one">
+            <img src="./assets/icons/check.png" alt="check_icon">
+            <div class="list-p-3">Post surgery</div>
+          </div>
+          <div class="services-list-one">
+            <img src="./assets/icons/check.png" alt="check_icon">
+            <div class="list-p-3">Pediatric (child nutrition)</div>
+          </div>
+          <div class="services-list-one">
+            <img src="./assets/icons/check.png" alt="check_icon">
+            <div class="list-p-3">Vitamin deficiencies</div>
+          </div>
+        </div>
+      </div>
+      <div class="btn">
+        <a href="./contact-us.html">
+          <div class="btn-join">Join Now <i class="ri-arrow-right-line"></i></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
-        </section>
-        <section class="upcoming-events">
-          <div class="upcoming-events-heading">Upcoming Events</div>
-          <div class="event-carousel">
-              <div class="event-carousel-wrapper">
-                  <div class="event-card">
-                      <img src="./assets/services/individual consulting.jpg" alt="Event Image" class="event-image">
-                      <div class="event-content">
-                          <h2 class="event-title">Happiness Program</h2>
-                          <p class="event-description">
-                              Discover proven strategies for long-term weight loss success. Learn how to create healthy habits, set achievable goals, and make sustainable lifestyle changes.
-                          </p>
-                          <div class="event-details">
-                              <p class="event-location"><i class="ri-map-pin-fill"></i> Saraswati mandir, Saraswati nagar, Kapan</p>
-                              <p class="event-date"><i class="ri-calendar-schedule-fill"></i> June 24, 2024 at 11 a.m - 5 p.m</p>
-                          </div>
-                          <a href="./events-details.html" class="read-more-button">Read More     <i class="ri-arrow-right-line"></i></a>
-                      </div>
-                  </div>
+<section class="counter">
+  <!-- Counter Element 1 -->
+  <div class="counter-element-1">
+    <div class="counter-icon">
+      <img src="./assets/icons/member.png" alt="members_icon">
+    </div>
+    <div class="counter-content">
+      <div class="counter-num">1500</div>
+      <div class="counter-text">+Total members</div>
+    </div>
+  </div>
+
+  <!-- Counter Element 2 (Duplicate for illustration) -->
+  <div class="counter-element-1">
+    <div class="counter-icon">
+      <img src="./assets/icons/member.png" alt="members_icon">
+    </div>
+    <div class="counter-content">
+      <div class="counter-num">1500</div>
+      <div class="counter-text">+Total members</div>
+    </div>
+  </div>
+
+  <!-- Counter Element 3 (Duplicate for illustration) -->
+  <div class="counter-element-1">
+    <div class="counter-icon">
+      <img src="./assets/icons/member.png" alt="members_icon">
+    </div>
+    <div class="counter-content">
+      <div class="counter-num">1500</div>
+      <div class="counter-text">+Total members</div>
+    </div>
+  </div>
+
+  <!-- Counter Element 4 (Duplicate for illustration) -->
+  <div class="counter-element-1">
+    <div class="counter-icon">
+      <img src="./assets/icons/member.png" alt="members_icon">
+    </div>
+    <div class="counter-content">
+      <div class="counter-num">1500</div>
+      <div class="counter-text">+Total members</div>
+    </div>
+  </div>
+</section>
+
+<section class="upcoming-events">
+  <!-- Heading for the Upcoming Events section -->
+  <div class="upcoming-events-heading">Upcoming Events</div>
+
+  <!-- Carousel Container for Events -->
+  <div class="event-carousel">
+    <!-- Wrapper for the carousel items -->
+    <div class="event-carousel-wrapper">
+      <!-- Event Card 1 -->
+      <div class="event-card">
+        <img src="./assets/services/individual consulting.jpg" alt="Event Image" class="event-image">
+        <div class="event-content">
+          <!-- Event Title -->
+          <h2 class="event-title">Happiness Program</h2>
+          <!-- Event Description -->
+          <p class="event-description">
+            Discover proven strategies for long-term weight loss success. Learn how to create healthy habits, set achievable goals, and make sustainable lifestyle changes.
+          </p>
+          <!-- Event Details: Location and Date -->
+          <div class="event-details">
+            <p class="event-location"><i class="ri-map-pin-fill"></i> Saraswati mandir, Saraswati nagar, Kapan</p>
+            <p class="event-date"><i class="ri-calendar-schedule-fill"></i> June 24, 2024 at 11 a.m - 5 p.m</p>
+          </div>
+          <!-- Read More Button -->
+          <a href="./events-details.html" class="read-more-button">Read More <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+
+      <!-- Event Card 2 -->
+      <div class="event-card">
+        <img src="./assets/services/meal plan.webp" alt="Event Image" class="event-image">
+        <div class="event-content">
+          <!-- Event Title -->
+          <h2 class="event-title">Nutrition Workshop</h2>
+          <!-- Event Description -->
+          <p class="event-description">
+            Join our workshop to learn about balanced diets, nutrition tips, and meal planning for a healthier lifestyle.
+          </p>
+          <!-- Event Details: Location and Date -->
+          <div class="event-details">
+            <p class="event-location"><i class="ri-map-pin-fill"></i> Main Hall, City Center</p>
+            <p class="event-date"><i class="ri-calendar-schedule-fill"></i> July 10, 2024 at 2 p.m - 4 p.m</p>
+          </div>
+          <!-- Read More Button -->
+          <a href="./events-details.html" class="read-more-button">Read More <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+
+      <!-- Add more event cards here as needed -->
+    </div>
+
+    <!-- Carousel Navigation Buttons -->
+    <button class="carousel-button prev-button"><i class="ri-arrow-left-line"></i></button>
+    <button class="carousel-button next-button"><i class="ri-arrow-right-line"></i></button>
+  </div>
+</section>
+
+
+<section class="blog">
+  <!-- Heading for the Blog section -->
+  <div class="blog-heading">
+    Our Blogs
+  </div>
+
+  <!-- Container for blog posts -->
+  <div class="blog-container-1">
+    <!-- Blog Post 1 -->
+    <div class="blog-1">
+      <img src="./assets/services/individual consulting.jpg" alt="blog_img">
+      <div class="blog-title">
+        10 Effective Strategies for Sustainable Weight Loss
+      </div>
+      <div class="blog-date"><i class="ri-calendar-fill"></i>June 24, 2024</div>
+      <div class="blog-btn">
+        Read More <i class="ri-arrow-right-line"></i>
+      </div>
+    </div>
+
+    <!-- Blog Post 2 -->
+    <div class="blog-1">
+      <img src="./assets/services/individual consulting.jpg" alt="blog_img">
+      <div class="blog-title">
+        10 Effective Strategies for Sustainable Weight Loss
+      </div>
+      <div class="blog-date"><i class="ri-calendar-fill"></i>June 24, 2024</div>
+      <div class="blog-btn">
+        Read More <i class="ri-arrow-right-line"></i>
+      </div>
+    </div>
+
+    <!-- Blog Post 3 -->
+    <div class="blog-1">
+      <img src="./assets/services/individual consulting.jpg" alt="blog_img">
+      <div class="blog-title">
+        10 Effective Strategies for Sustainable Weight Loss
+      </div>
+      <div class="blog-date"><i class="ri-calendar-fill"></i>June 24, 2024</div>
+      <div class="blog-btn">
+        Read More <i class="ri-arrow-right-line"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second row of blog posts -->
+  <div class="blog-container-1">
+    <!-- Blog Post 4 -->
+    <div class="blog-1">
+      <img src="./assets/services/individual consulting.jpg" alt="blog_img">
+      <div class="blog-title">
+        10 Effective Strategies for Sustainable Weight Loss
+      </div>
+      <div class="blog-date"><i class="ri-calendar-fill"></i>June 24, 2024</div>
+      <div class="blog-btn">
+        Read More <i class="ri-arrow-right-line"></i>
+      </div>
+    </div>
+
+    <!-- Blog Post 5 -->
+    <div class="blog-1">
+      <img src="./assets/services/individual consulting.jpg" alt="blog_img">
+      <div class="blog-title">
+        10 Effective Strategies for Sustainable Weight Loss
+      </div>
+      <div class="blog-date"><i class="ri-calendar-fill"></i>June 24, 2024</div>
+      <div class="blog-btn">
+        Read More <i class="ri-arrow-right-line"></i>
+      </div>
+    </div>
+
+    <!-- Blog Post 6 -->
+    <div class="blog-1">
+      <img src="./assets/services/individual consulting.jpg" alt="blog_img">
+      <div class="blog-title">
+        10 Effective Strategies for Sustainable Weight Loss
+      </div>
+      <div class="blog-date"><i class="ri-calendar-fill"></i>June 24, 2024</div>
+      <div class="blog-btn">
+        Read More <i class="ri-arrow-right-line"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="clients-transformation">
+  <div class="transformation-heading">Client's Transformation</div>
+  <div class="video-container">
+    <video src="./assets/clients-transformation/WhatsApp Video 2024-08-04 at 14.42.36_8b7ad6e1.mp4" autoplay muted loop></video>
+  </div>
+</section>
+
+<section class="testimonials">
+  <!-- Heading for the testimonials section -->
+  <div class="testimonials-heading">Testimonials</div>
+  
+  <!-- Brief introductory text for the testimonials section -->
+  <div class="testimonials-brief">
+      <span style="color: #000; margin-right: 5px;">Clients</span>
+      <span style="color: #72ae44;">Say's</span>
+  </div>
+  
+  <!-- Container for the carousel -->
+  <div class="carousel-container">
+      <!-- Carousel element containing individual testimonials -->
+      <div class="carousel">
+          <!-- Single testimonial item -->
+          <div class="testimonial">
+              <p class="quote"><i class="ri-double-quotes-l"></i></p> <!-- Quote icon -->
+              <p class="text">I can't thank Nutritionist enough for their personalized nutrition coaching. It has completely transformed my approach to food and helped me shed those extra pounds. Highly recommended!</p> <!-- Testimonial text -->
+              <div class="author">
+                  <span>Jennifer Anderson</span> <!-- Author's name -->
+              </div>
+          </div>
+          
+          <!-- Another testimonial item -->
+          <div class="testimonial">
+              <p class="quote"><i class="ri-double-quotes-l"></i></p> <!-- Quote icon -->
+              <p class="text">Nutritionist has been a game-changer for me. The expert guidance and support I received from their team made my weight loss journey so much easier. Thank you!</p> <!-- Testimonial text -->
+              <div class="author">
+                  <span>Robert Johnson</span> <!-- Author's name -->
+              </div>
+          </div>
+          
+          <!-- Another testimonial item -->
+          <div class="testimonial">
+              <p class="quote"><i class="ri-double-quotes-l"></i></p> <!-- Quote icon -->
+              <p class="text">I had struggled with my weight for years until I found Nutritionist. Their personalized approach and tailored nutrition plan made all the difference. I've never felt better!</p> <!-- Testimonial text -->
+              <div class="author">
+                  <span>Emily Davis</span> <!-- Author's name -->
+              </div>
+          </div>
+      </div>
       
-                  <div class="event-card">
-                      <img src="./assets/services/meal plan.webp" alt="Event Image" class="event-image">
-                      <div class="event-content">
-                          <h2 class="event-title">Nutrition Workshop</h2>
-                          <p class="event-description">
-                              Join our workshop to learn about balanced diets, nutrition tips, and meal planning for a healthier lifestyle.
-                          </p>
-                          <div class="event-details">
-                              <p class="event-location"><i class="ri-map-pin-fill"></i> Main Hall, City Center</p>
-                              <p class="event-date"><i class="ri-calendar-schedule-fill"></i> July 10, 2024 at 2 p.m - 4 p.m</p>
-                          </div>
-                          <a href="./events-details.html" class="read-more-button">Read More <i class="ri-arrow-right-line"></i></a>
-                      </div>
-                  </div>
-      
-                  <!-- Add more event cards here -->
-              </div>
-      
-              <button class="carousel-button prev-button"><i class="ri-arrow-left-line"></i></button>
-              <button class="carousel-button next-button"><i class="ri-arrow-right-line"></i></button>
+      <!-- Carousel controls (previous, next, and dot indicators) -->
+      <div class="controls">
+          <button class="prev"><i class="ri-arrow-left-line"></i></button> <!-- Previous button -->
+          <div class="dots">
+              <span class="dot active"></span> <!-- Active dot indicator -->
+              <span class="dot"></span>
+              <span class="dot"></span>
           </div>
-      </section>
-
-      <section class="blog">
-        <div class="blog-heading">
-          Our Blogs
-        </div>
-        <div class="blog-container-1">
-          <div class="blog-1">
-  
-       
-          <img src="./assets/services/individual consulting.jpg" alt="blog_img">
-          <div class="blog-title">
-            10 Effective Strategies for Sustainable Weight Loss
-          </div>
-         
-          <div class="blog-date"><i class="ri-calendar-fill"></i>June 24, 2024
-
-          </div>
-          <div class="blog-btn">
-            Read More    <i class="ri-arrow-right-line"></i>
-          </div>
-        </div>
-        <div class="blog-1">
-  
-       
-          <img src="./assets/services/individual consulting.jpg" alt="blog_img">
-          <div class="blog-title">
-            10 Effective Strategies for Sustainable Weight Loss
-          </div>
-          <div class="blog-date"><i class="ri-calendar-fill"></i>June 24, 2024
-
-          </div>
-          <div class="blog-btn">
-            Read More    <i class="ri-arrow-right-line"></i>
-          </div>
-        </div>
-        <div class="blog-1">
-  
-       
-          <img src="./assets/services/individual consulting.jpg" alt="blog_img">
-          <div class="blog-title">
-            10 Effective Strategies for Sustainable Weight Loss
-          </div>
-          <div class="blog-date"><i class="ri-calendar-fill"></i>June 24, 2024
-
-          </div>
-          <div class="blog-btn">
-            Read More    <i class="ri-arrow-right-line"></i>
-          </div>
-        </div>
-        </div>
-
-        <div class="blog-container-1">
-          <div class="blog-1">
-  
-       
-          <img src="./assets/services/individual consulting.jpg" alt="blog_img">
-          <div class="blog-title">
-            10 Effective Strategies for Sustainable Weight Loss
-          </div>
-         
-          <div class="blog-date"><i class="ri-calendar-fill"></i>June 24, 2024
-
-          </div>
-          <div class="blog-btn">
-            Read More    <i class="ri-arrow-right-line"></i>
-          </div>
-        </div>
-        <div class="blog-1">
-  
-       
-          <img src="./assets/services/individual consulting.jpg" alt="blog_img">
-          <div class="blog-title">
-            10 Effective Strategies for Sustainable Weight Loss
-          </div>
-          <div class="blog-date"><i class="ri-calendar-fill"></i>June 24, 2024
-
-          </div>
-          <div class="blog-btn">
-            Read More    <i class="ri-arrow-right-line"></i>
-          </div>
-        </div>
-        <div class="blog-1">
-  
-       
-          <img src="./assets/services/individual consulting.jpg" alt="blog_img">
-          <div class="blog-title">
-            10 Effective Strategies for Sustainable Weight Loss
-          </div>
-          <div class="blog-date"><i class="ri-calendar-fill"></i>June 24, 2024
-
-          </div>
-          <div class="blog-btn">
-            Read More    <i class="ri-arrow-right-line"></i>
-          </div>
-        </div>
-        </div>
-        
-
-      </section>
-
-      <section class="testimonials">
-        <div class="testimonials-heading">Testimonials</div>
-        <div class="testimonials-brief">
-          <span style="color: #000;margin-right: 5px;">Clients</span>
-          <span style="color: #72ae44;">Say's</span>
+          <button class="next"><i class="ri-arrow-right-line"></i></button> <!-- Next button -->
       </div>
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="testimonial">
-                    <p class="quote"><i class="ri-double-quotes-l"></i></p>
-                    <p class="text">I can't thank Nutritionist enough for their personalized nutrition coaching. It has completely transformed my approach to food and helped me shed those extra pounds. Highly recommended!</p>
-                    <div class="author">
-                        <span>Jennifer Anderson</span>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <p class="quote"><i class="ri-double-quotes-l"></i></p>
-                    <p class="text">Nutritionist has been a game-changer for me. The expert guidance and support I received from their team made my weight loss journey so much easier. Thank you!</p>
-                    <div class="author">
-                        <span>Robert Johnson</span>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <p class="quote"><i class="ri-double-quotes-l"></i></p>
-                    <p class="text">I had struggled with my weight for years until I found Nutritionist. Their personalized approach and tailored nutrition plan made all the difference. I've never felt better!</p>
-                    <div class="author">
-                        <span>Emily Davis</span>
-                    </div>
-                </div>
-            </div>
-            <div class="controls">
-                <button class="prev"><i class="ri-arrow-left-line"></i></button>
-                <div class="dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-                <button class="next"><i class="ri-arrow-right-line"></i></button>
-            </div>
-        </div>
-    </section>
+  </div>
+</section>
 
     <div class="get-started-today">
       <div class="get-started-today-right">
@@ -537,14 +581,14 @@
         </div>
         <div class="footer-section-2">
           <div class="title">Contact Us</div>
-          <div>
+          <!-- <div>
             <i class="ri-map-pin-fill"></i> Somewhere in the World
-          </div>
+          </div> -->
           <div>
             <i class="ri-mail-fill"></i> dietitiansukriti.sattva@gmail.com
           </div>
           <div>
-            <i class="ri-phone-fill"></i> +91 91813 23 2309
+            <i class="ri-phone-fill"></i> 9841737606, 9851011696
           </div>
         </div>
         <div class="footer-section-3">
