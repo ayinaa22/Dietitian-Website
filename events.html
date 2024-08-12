@@ -75,14 +75,14 @@
       <div class="container">
         <div class="background">
             <div class="overlay">
-                <h1>Blogs</h1>
-                <p> <a href="./index.html">Home //</a><span class="highlight">Blogs</span></p>
+                <h1>Events</h1>
+                <p> <a href="./index.html">Home //</a><span class="highlight">Events</span></p>
             </div>
         </div>
     </div>
      
     <section class="events-section">
-        <div class="upcoming-events-heading">Upcoming Events</div>
+        <div class="upcoming-events-heading"> Events</div>
         <div class="events-grid">
             <div class="event-item">
                 <img src="./assets/services/individual consulting.jpg" alt="Event Image" class="event-img">
@@ -128,6 +128,7 @@
                     <a href="#" class="read-more-btn">Read More  <i class="ri-arrow-right-line"></i></a>
                 </div>
             </div>
+            
             <div class="event-item">
                 <img src="./assets/services/meal plan.webp" alt="Event Image" class="event-img">
                 <div class="event-info">
@@ -223,7 +224,32 @@
       </div>
     </footer>
     
- 
+    <script>
+      // gallery dropdown 
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const galleryBtn = document.getElementById('galleryBtn');
+    const galleryDropdown = document.getElementById('galleryDropdown');
+  
+    if (galleryBtn && galleryDropdown) {
+        galleryBtn.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent the default link behavior
+            if (galleryDropdown.style.display === 'block') {
+                galleryDropdown.style.display = 'none';
+            } else {
+                galleryDropdown.style.display = 'block';
+            }
+        });
+    
+        // Close the dropdown if clicked outside
+        window.addEventListener('click', (e) => {
+            if (!galleryBtn.contains(e.target) && !galleryDropdown.contains(e.target)) {
+                galleryDropdown.style.display = 'none';
+            }
+        });
+    }
+});
+    </script>
 </body>
-<script src="./index.js"></script>
+
 </html>

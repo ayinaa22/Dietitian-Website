@@ -88,31 +88,33 @@
           <div class="blog-1">
   
        
-          <img src="./assets/services/individual consulting.jpg" alt="blog_img">
+          <img src="./assets/blog-photos/curry-leaves.jpg" alt="blog_img">
           <div class="blog-title">
-            10 Effective Strategies for Sustainable Weight Loss
+            The Nutritional Benefits of Curry Leaves
           </div>
          
           <div class="blog-date"><i class="ri-calendar-fill"></i>June 24, 2024
 
           </div>
-          <div class="blog-btn">
-            Read More    <i class="ri-arrow-right-line"></i>
+          <a href="./blog-details.html"  class="blog-btn"><div>
+            Read More <i class="ri-arrow-right-line"></i>
           </div>
+        </a>
         </div>
         <div class="blog-1">
   
        
-          <img src="./assets/services/individual consulting.jpg" alt="blog_img">
+          <img src="./assets/blog-photos/food-diary.jpg" alt="blog_img">
           <div class="blog-title">
-            10 Effective Strategies for Sustainable Weight Loss
+            The Power of Keeping a Food Diary
           </div>
           <div class="blog-date"><i class="ri-calendar-fill"></i>June 24, 2024
 
           </div>
-          <div class="blog-btn">
-            Read More    <i class="ri-arrow-right-line"></i>
+          <a href="./food-diary.html"  class="blog-btn"><div>
+            Read More <i class="ri-arrow-right-line"></i>
           </div>
+        </a>
         </div>
         <div class="blog-1">
   
@@ -226,7 +228,63 @@
         </div>
       </footer>
       
-      
+      <script>
+        // gallery dropdown 
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const galleryBtn = document.getElementById('galleryBtn');
+    const galleryDropdown = document.getElementById('galleryDropdown');
+  
+    if (galleryBtn && galleryDropdown) {
+        galleryBtn.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent the default link behavior
+            if (galleryDropdown.style.display === 'block') {
+                galleryDropdown.style.display = 'none';
+            } else {
+                galleryDropdown.style.display = 'block';
+            }
+        });
+    
+        // Close the dropdown if clicked outside
+        window.addEventListener('click', (e) => {
+            if (!galleryBtn.contains(e.target) && !galleryDropdown.contains(e.target)) {
+                galleryDropdown.style.display = 'none';
+            }
+        });
+    }
+});
+
+//   nav-bar
+const menuIcon = document.querySelector('.hamburger-menu .menu-icon');
+const closeIcon = document.querySelector('.hamburger-menu .close-icon');
+const navBar = document.querySelector('.nav-bar');
+const mobileNav = document.querySelector('.mobile-nav');
+
+menuIcon.addEventListener('click', () => {
+  navBar.classList.add('active');
+  mobileNav.style.display = 'flex';
+  menuIcon.style.display = 'none';
+  closeIcon.style.display = 'block';
+});
+
+closeIcon.addEventListener('click', () => {
+  navBar.classList.remove('active');
+  mobileNav.style.display = 'none';
+  menuIcon.style.display = 'block';
+  closeIcon.style.display = 'none';
+});
+
+// Toggle mobile dropdown menu
+const mobileGalleryBtn = document.getElementById('mobileGalleryBtn');
+const mobileGalleryDropdown = document.getElementById('mobileGalleryDropdown');
+
+mobileGalleryBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  mobileGalleryDropdown.style.display = mobileGalleryDropdown.style.display === 'block' ? 'none' : 'block';
+});
+
+
+      </script>     
 </body>
-<script src="./index.js"></script>
+
 </html>

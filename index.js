@@ -96,22 +96,25 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const galleryBtn = document.getElementById('galleryBtn');
     const galleryDropdown = document.getElementById('galleryDropdown');
   
-    galleryBtn.addEventListener('click', (e) => {
-      e.preventDefault(); // Prevent the default link behavior
-      if (galleryDropdown.style.display === 'block') {
-        galleryDropdown.style.display = 'none';
-      } else {
-        galleryDropdown.style.display = 'block';
-      }
-    });
-  
-    // Close the dropdown if clicked outside
-    window.addEventListener('click', (e) => {
-      if (!galleryBtn.contains(e.target) && !galleryDropdown.contains(e.target)) {
-        galleryDropdown.style.display = 'none';
-      }
-    });
-  });
+    if (galleryBtn && galleryDropdown) {
+        galleryBtn.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent the default link behavior
+            if (galleryDropdown.style.display === 'block') {
+                galleryDropdown.style.display = 'none';
+            } else {
+                galleryDropdown.style.display = 'block';
+            }
+        });
+    
+        // Close the dropdown if clicked outside
+        window.addEventListener('click', (e) => {
+            if (!galleryBtn.contains(e.target) && !galleryDropdown.contains(e.target)) {
+                galleryDropdown.style.display = 'none';
+            }
+        });
+    }
+});
+
 
 
 //   nav-bar
