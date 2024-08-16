@@ -1193,7 +1193,7 @@ body {
 
 .blog-1 img {
   width: 100%;
-  height: 200px;
+  height: 220px;
   border-radius: 10px;
   
 }
@@ -1209,6 +1209,7 @@ body {
   padding: 5px 20px;
   display: flex;
   gap: 10px;
+  font-size: 18px;
   color: var(--text);
 }
 
@@ -2410,7 +2411,7 @@ textarea {
   object-fit: fill;
 }
 
-.blog-details {
+.blog-details p {
   color: var(--text);
   font-size: 20px;
   text-align: justify;
