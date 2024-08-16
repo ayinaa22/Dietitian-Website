@@ -101,6 +101,7 @@ body {
   position: absolute;
   top: 60px;
   width: 100%;
+  z-index: 200;
 }
 
 
@@ -117,6 +118,35 @@ body {
 }
 
 /* Styles for dropdown content in mobile navigation */
+.mobile-nav .dropdown {
+  position: relative;
+}
+
+.mobile-nav .dropdown a.dropbtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Aligns the arrow and text vertically */
+  padding: 12px 16px;  /* Same padding as other links */
+}
+
+.mobile-nav .dropdown a.dropbtn i {
+  margin-left: 8px; /* Adjust spacing between text and arrow */
+}
+
+.mobile-nav a, .mobile-nav .dropdown a.dropbtn {
+  padding: 12px 16px;  /* Ensure consistent padding for all links */
+}
+
+.mobile-nav .dropdown-content {
+  display: none;
+  flex-direction: column;
+}
+
+.mobile-nav .dropdown:hover .dropdown-content,
+.mobile-nav .dropdown-content.active {
+  display: flex;
+}
+
 .mobile-nav .dropdown-content {
   position: static;
   box-shadow: none;

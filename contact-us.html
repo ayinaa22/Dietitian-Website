@@ -177,28 +177,59 @@
   // gallery dropdown 
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    const galleryBtn = document.getElementById('galleryBtn');
-    const galleryDropdown = document.getElementById('galleryDropdown');
-  
-    if (galleryBtn && galleryDropdown) {
-        galleryBtn.addEventListener('click', (e) => {
-            e.preventDefault(); // Prevent the default link behavior
-            if (galleryDropdown.style.display === 'block') {
-                galleryDropdown.style.display = 'none';
-            } else {
-                galleryDropdown.style.display = 'block';
-            }
-        });
-    
-        // Close the dropdown if clicked outside
-        window.addEventListener('click', (e) => {
-            if (!galleryBtn.contains(e.target) && !galleryDropdown.contains(e.target)) {
-                galleryDropdown.style.display = 'none';
-            }
-        });
-    }
+const galleryBtn = document.getElementById('galleryBtn');
+const galleryDropdown = document.getElementById('galleryDropdown');
+
+if (galleryBtn && galleryDropdown) {
+  galleryBtn.addEventListener('click', (e) => {
+      e.preventDefault(); // Prevent the default link behavior
+      if (galleryDropdown.style.display === 'block') {
+          galleryDropdown.style.display = 'none';
+      } else {
+          galleryDropdown.style.display = 'block';
+      }
+  });
+
+  // Close the dropdown if clicked outside
+  window.addEventListener('click', (e) => {
+      if (!galleryBtn.contains(e.target) && !galleryDropdown.contains(e.target)) {
+          galleryDropdown.style.display = 'none';
+      }
+  });
+}
 });
-</script>
+
+//   nav-bar
+const menuIcon = document.querySelector('.hamburger-menu .menu-icon');
+const closeIcon = document.querySelector('.hamburger-menu .close-icon');
+const navBar = document.querySelector('.nav-bar');
+const mobileNav = document.querySelector('.mobile-nav');
+
+menuIcon.addEventListener('click', () => {
+navBar.classList.add('active');
+mobileNav.style.display = 'flex';
+menuIcon.style.display = 'none';
+closeIcon.style.display = 'block';
+});
+
+closeIcon.addEventListener('click', () => {
+navBar.classList.remove('active');
+mobileNav.style.display = 'none';
+menuIcon.style.display = 'block';
+closeIcon.style.display = 'none';
+});
+
+// Toggle mobile dropdown menu
+const mobileGalleryBtn = document.getElementById('mobileGalleryBtn');
+const mobileGalleryDropdown = document.getElementById('mobileGalleryDropdown');
+
+mobileGalleryBtn.addEventListener('click', (event) => {
+event.preventDefault();
+mobileGalleryDropdown.style.display = mobileGalleryDropdown.style.display === 'block' ? 'none' : 'block';
+});
+
+
+</script>    
 </body>
 
 </html>
